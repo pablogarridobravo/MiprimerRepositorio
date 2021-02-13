@@ -1,7 +1,8 @@
 package cuentas;
 
-/**  
- * @author Pablo Garrido
+/**   
+ * Clase principal.
+ * @author Pablo Garrido.
  * 
  * 
  * @version 1.0
@@ -12,7 +13,7 @@ package cuentas;
 public class Main {
 /**
  * Metodo main. 
- * @param Parametro args.  Array  de tipo String.
+ * @param Parametro args.  Array de tipo String.
  */
 	public static void main(String[] args) {
 		// TODO Esbozo de método generado automáticamente

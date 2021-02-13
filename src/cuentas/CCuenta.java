@@ -1,6 +1,6 @@
 package cuentas;
 
-/** Con esta clase construimos  los clientes y sus dsatos  
+/** Con esta clase construimos  los clientes y sus datos  
  * @author Pablo Garrido 
  * 
  * 
@@ -10,14 +10,15 @@ package cuentas;
  * 
  * */
 public class CCuenta {//clase 
-	//variable 
+	//Atributos de clase
 	private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
-    
+   
+      
     /**
-     * @deprecated metodo contructor por defeto no es necesario.
+     * @deprecated Método contructor por defeto, no es necesario.
      */
     
     // metodo construtor.
@@ -42,10 +43,11 @@ public class CCuenta {//clase
         setSaldo(sal);
     }//cierre del contructor
     
-    /** Metodo que devuelve el saldo actual de la cuenta. 
-     * @return El saldo  */
+    /** Método que devuelve el saldo actual de la cuenta. 
+     * @return El saldo 
+     *  */
 
-    // metodo para obtener el saldo.
+    //Método para obtener el saldo.
     
     public double estado()
     {
@@ -54,11 +56,11 @@ public class CCuenta {//clase
     
     /**
      * Método que verifica la cantidad ingresada.
-     *@param double cantidad saldo a ingresar.
+     *@param double cantidad- Saldo a ingresar.
      *@throws Excepción lanza una excepción llama al metodo que lo gestiona.
      * */
 
-    /*metodo que verifica si la cantidad a ingresar es menor que cero
+    /*Método que verifica si la cantidad a ingresar es menor que cero
      *en el caso de ser cierto lanzara una excepecion*/ 
     
     public void ingresar(double cantidad) throws Exception
@@ -70,8 +72,8 @@ public class CCuenta {//clase
     
     /** 
      * Método que verifica si la cantidad a retirar es correcta.
-     * @param double cantidad saldo a retirar.
-     * @throws Excepción lanza una excepción llama al metodo que lo gestiona.
+     * @param double cantidad- Saldo a retirar.
+     * @throws Excepción- Lanza una excepción llama al metodo que lo gestiona.
      * @exception 
      *  */
     
@@ -88,57 +90,62 @@ public class CCuenta {//clase
     }
     /**
      * Metodo que devuelve el nombre
-     * @return El nombre.
+     * @return  nombre.
      */
+	@SuppressWarnings("unused")
 	private String getNombre() {
 		return nombre;
 	}
 	/**
-	 * Metodo
+	 * Método 
 	 * @param nombre
 	 */
 	private void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	/**
-	 * 
-	 * @return
+	 * Método  que devuelve el número de cuenta.
+	 * @return  cuenta.
 	 */
+	@SuppressWarnings("unused")
 	private String getCuenta() {
 		return cuenta;
 	}
 	/**
-	 * 
+	 * Método 
 	 * @param cuenta
 	 */
 	private void setCuenta(String cuenta) {
 		this.cuenta = cuenta;
 	}
 	/**
-	 * 
-	 * @return
+	 * Método  que devuelve el dinero en la cuenta
+	 * @return saldo.
 	 */
 	private double getSaldo() {
 		return saldo;
 	}
 	/**
-	 * 
+	 * Método  
 	 * @param saldo
 	 */
 	private void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 	/**
-	 * 
-	 * @return
+	 * Método  que devuelve el tipo de interes aplicado.
+	 * @return el tipo de interés
 	 */
+	@SuppressWarnings("unused")
 	private double getTipoInterés() {
 		return tipoInterés;
 	}
 	/**
-	 * 
+	 *  Método 
 	 * @param tipoInterés
 	 */
+
+	@SuppressWarnings("unused")
 	private void setTipoInterés(double tipoInterés) {
 		this.tipoInterés = tipoInterés;
 	}
